@@ -1,0 +1,11 @@
+UPDATE OSZContract2010 SET ID = 10 WHERE ID = 11;
+UPDATE OSZContractItem2010 SET IDContract = 10 WHERE IDContract = 11;
+UPDATE OSZContractRuleItem2010 SET IDContract = 10 WHERE IDContract = 11;
+DELETE FROM OSZInvoice2010 WHERE ID = 9;
+UPDATE OSZInvoice2010 SET ID = 9 WHERE ID = 10;
+UPDATE OSZInvoice2010 SET IDContract = 10 WHERE IDContract = 11;
+DELETE FROM OSZInvoiceItem2010 WHERE IDInvoice = 9;
+UPDATE OSZInvoiceItem2010 SET IDInvoice = 9 WHERE IDInvoice = 10;
+DELETE FROM OSZInvoiceContractItem2010 WHERE IDInvoice = 9;
+UPDATE OSZInvoiceContractItem2010 SET IDInvoice = 9 WHERE IDInvoice = 10;
+UPDATE OSZInvoiceContractItem2010 SET IDContract = 10 WHERE IDContract = 11;

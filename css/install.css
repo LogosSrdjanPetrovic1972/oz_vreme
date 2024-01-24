@@ -1,0 +1,98 @@
+/* $Id$ */
+/**
+*
+* @author         $Author$
+* @version        $Revision$
+* @lastrevision   $Date$
+* @modifiedby     $LastChangedBy$
+* @lastmodified   $LastChangedDate$
+*
+*/
+/**
+*
+* EDOTPLUS 
+*
+* @project      EZADRUGA web portal
+* @copyright    (C)2011 by Srđan Petrović@edotplus. All rights reserved.
+* @license      Edotplus applications are not free software. For usage, distribution, using,
+*               changing or copying any part of the code you need to have exclusive permission
+*               by Srdjan Petrovic. Any violation of those rules will be considered as
+*               intellectual property theft!
+*
+* @file         install.css
+* @package      css
+* @subpackage   
+*
+* @description  Main installation css file
+*
+* @history      04.11.2011. ; srdjanp ; Initial revision
+*
+*/
+
+
+body{
+  margin: 0px; 
+  padding: 0px; 
+  background-color:#ccdcec;
+  background-image:url(../images/bg.jpg);
+  background-repeat:repeat-x;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size:10px;
+  color:#004A7F;
+}
+
+p, h1, h2, h3, form, ul, ol, table {margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;}
+
+a {
+	font-size:10px;
+	color:#ea1b0a;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+th {
+  font-size:12px;
+  font-weight: bold;
+}
+
+td {
+  font-size:12px;
+}
+
+img { 
+  border: none; 
+  border-style: none;
+  display:block;
+  padding: 0px; 
+  margin: 0px; 
+}
+
+a { color:#ff7c00; text-decoration:underline; outline: none; font-weight: bold;}
+a:hover,
+a:active,
+a:focus { color:#ff0000; text-decoration:underline; font-weight: bold;}
+
+/* main content start */
+
+/* form */
+.frm_install {
+  background-color:#fff;
+  border: 1px solid #F0F0F0;
+}
+
+
+.buttonSubmit {
+  border: 0px solid #ff7c00; 
+  background: url(orange_btn_left.png) top left no-repeat, url(orange_btn_center.png) top center no-repeat, url(orange_btn_right.png) top right no-repeat;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ff0000;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}

@@ -1,0 +1,566 @@
+/* $Id$ */
+/**
+*
+* @author         $Author$
+* @version        $Revision$
+* @lastrevision   $Date$
+* @modifiedby     $LastChangedBy$
+* @lastmodified   $LastChangedDate$
+*
+*/
+/**
+*
+* EDOTPLUS 
+*
+* @project      EZADRUGA web portal
+* @copyright    (C)2011 by Srđan Petrović@edotplus. All rights reserved.
+* @license      Edotplus applications are not free software. For usage, distribution, using,
+*               changing or copying any part of the code you need to have exclusive permission
+*               by Srdjan Petrovic. Any violation of those rules will be considered as
+*               intellectual property theft!
+*
+* @file         style.css
+* @package      css
+* @subpackage   
+*
+* @description  Main style css file
+*
+* @history      04.11.2011. ; srdjanp ; Initial revision
+*
+*/
+body{
+  margin: 0px; 
+  padding: 0px; 
+  background-color:#ccdcec;
+  background-image:url(bg.jpg);
+  background-repeat:repeat-x;
+  font-family:Arial, Tahoma, Georgia;
+  font-size:12px;
+  color:#004A7F;
+}
+
+a {
+	font-size:12px;
+	color:#ea1b0a;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+textarea{resize: none}
+
+ul {
+  padding-left:0px;
+  margin-left:25px;
+}
+
+table {
+  text-align: left;
+  font-size:12px;
+}
+
+img {
+  border-top: 0px none;
+  border-left: 0px none;
+  border-right: 0px none;
+  border-bottom: 0px none;
+}
+
+img a {
+  border-top: 0px none;
+  border-left: 0px none;
+  border-right: 0px none;
+  border-bottom: 0px none;
+}
+
+img a:hover {
+  border-top: 0px none;
+  border-left: 0px none;
+  border-right: 0px none;
+  border-bottom: 0px none;
+}
+
+/* header start */
+.header {
+  width: 980px;
+  height: 60px;
+}
+.header_left {
+  width: 390px;
+  height: 60px;
+}
+.header_right {
+  width: 590px;
+  height: 60px;
+}
+/* header end */
+/* footer start */
+.footer {
+  width: 1000px;
+}
+
+.footer_copyright {
+  height: 15px;
+  text-align: left;
+  font-size:11px;
+  font-weight: bold;
+  font-style:italic;
+}
+
+.footer_copyright a {
+	color:#ea1b0a;
+	text-decoration:none;
+  font-size:10px;
+}
+
+.footer_copyright a:hover {
+	text-decoration:underline;
+}
+
+.footer_version {
+  height: 15px;
+  text-align: right;
+  font-size:14px;
+  font-weight: bold;
+  font-style: italic;
+}
+/* footer end */
+
+/* image thumb start */
+.thumbnail{
+position: relative;
+z-index: 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+z-index: 50;
+}
+
+.thumbnail span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+visibility: visible;
+top: 0;
+left: 60px; /*position where enlarged image should offset horizontally */
+}
+/* image thumb end */
+
+/* main content start */
+.main_content_location {
+  padding-top: 10px;
+}
+
+.content_location {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content_all {
+  margin: 0px;
+  padding: 0px;
+  background-color:#FFFFFF;
+  width:1000px;
+}
+
+.content_all_left {
+  background-color:#FFFFFF;
+  width:10px;
+}
+
+.content_main {
+  width: 980px;
+  background-color:#FFFFFF;
+  font-size:12px;
+}
+
+.content_all_right {
+  background-color:#FFFFFF;
+  width:10px;
+}
+
+.main_content {
+  width: 980px;
+  height:680px;
+  background-color:#FFFFFF;
+  font-size:12px;
+  margin-top:10px;
+}
+/* main content end */
+
+/* menu definitions start */
+.main_menu {
+  border-bottom: 1px solid #004A7F;
+}
+
+.main_menu_selected {
+	font-size:12px;
+	color:#004A7F;
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+.main_menu_selected a {
+	font-size:12px;
+	color:#004A7F;
+	text-decoration:underline;
+	font-weight: bold;
+}
+
+.main_menu_selected a:hover {
+	font-size:12px;
+	color:#004A7F;
+	text-decoration:underline;
+	font-weight: bold;
+}
+/* menu definitions end */
+
+/* left sub menu definition start */
+.left_menu {
+  width:160px;
+  border-right: 1px solid #004A7F;
+}
+/* left sub menu definition end */
+
+/* table definitions */
+.table_login {
+  width:363px;
+  height:203px;
+}
+
+.table_login_bottom {
+  background-image:url(login_bg.png);
+  background-repeat:repeat-x;
+}
+
+.table_browse {
+  font-size:11px;
+}
+
+.table_browse th{
+  font-weight: bold;
+  text-align: left;
+  font-style: italic;
+  background-color: #D6EBFF;
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+}
+
+.table_browse td{
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 5px;
+}
+
+.table_browse_right {
+  font-size:11px;
+}
+
+.table_browse_right th{
+  font-weight: bold;
+  text-align: right;
+  font-style: italic;
+  background-color: #D6EBFF;
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+}
+
+.table_browse_right td{
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 5px;
+}
+
+.table_edit {
+  font-size:11px;
+}
+
+.table_edit th{
+  font-weight: bold;
+  font-style: italic;
+  background-color: #D6EBFF;
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.table_edit td{
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 5px;
+}
+
+.table_browse {
+  font-size:11px;
+}
+
+.table_browse th{
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-color: #D6EBFF;
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.table_browse td{
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 5px;
+}
+
+.table_search {
+  font-size:11px;
+}
+
+.table_search td{
+  padding-left: 5px;
+}
+
+.table_search th{
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  background-color: #D6EBFF;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.td_progress {
+  background-color: #FFDD77;
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.td_header {
+  font-weight: bold;
+  text-align: right;
+  font-style: italic;
+  background-color: #D6EBFF;
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Admin pages style */
+.admin_header {
+  font-size:16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #004A7F;
+}
+
+.admin_header a {
+  text-decoration: none;
+}
+
+.admin_header a:hover {
+  text-decoration: underline;
+}
+
+.admin_footer {
+  background-color:#AAD9FF;
+  font-size:10px;
+  font-style:italic;
+  text-align: right;
+  padding: 10px 10px 10px 0px;
+  border-top: 1px solid #004A7F;
+}
+
+.login_box {
+  border-top: 1px solid #004A7F;
+  border-left: 1px solid #004A7F;
+  border-right: 1px solid #004A7F;
+  border-bottom: 1px solid #004A7F;
+  font-size:13px;
+  font-weight: bold;
+}
+
+.action_title {
+  border-bottom: 1px solid #004A7F;
+  font-weight: bold;
+  padding-bottom:10px;
+  padding-top:20px;
+  
+}
+
+/* form style definitions */
+.required_data {
+  font-weight: bold;
+  font-style: italic;
+  color:#ff0000;
+  text-decoration: underline;  
+}
+
+.field {
+	border:1px solid #004A7F;
+	font-size: 13px; 
+	font-weight:normal; 
+	color: #666666; 
+	padding-left:5px;	
+	background-color:#ffffff;
+}
+
+.btn{
+	height:22px;
+  border:none;
+	background-color:#004A7F;
+	background-image:url(btn.jpg);
+	background-repeat:repeat-x;
+	color:#FFFFFF;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:bold;
+	padding:0px 10px 2px 10px;
+}
+
+.btn:hover {
+  background-image:none;
+  color:#FFFFFF;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+
+.text_input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #003399;
+  background-image: url(gray_input.png);
+  background-repeat: repeat-x;
+  font-size: 12px;
+  color: #000000;
+  height: 18px;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+ 
+.text_input:hover {
+  background-repeat: repeat-x;
+  background-image: url(blue_input.png);
+}
+ 
+.text_input:focus {
+  border-color: #64acd8;
+  background-image: url(blue_input.png);
+  background-repeat: repeat-x;
+}
+
+.text_input_error {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff0000;
+  background-image: url(red_input.png);
+  background-repeat: repeat-x;
+  font-size: 12px;
+  color: #000000;
+  height: 18px;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+ 
+.text_input_error:hover {
+  background-image: url(red_input.png);
+  background-repeat: repeat-x;
+}
+ 
+.text_input_error:focus {
+  border-color: #ff0000;
+  background-image: url(blue_input.png);
+  background-repeat: repeat-x;
+}
+
+.textarea_input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #003399;
+  background-image: url(gray_textarea.png);
+  background-repeat: repeat-x;
+  font-size: 12px;
+  color: #000000;
+  height: 140px;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+ 
+.textarea_input:hover {
+  background-repeat: repeat-x;
+  background-image: url(blue_textarea.png);
+}
+ 
+.textarea_input:focus {
+  border-color: #64acd8;
+  background-image: url(blue_textarea.png);
+  background-repeat: repeat-x;
+}
+
+.textarea_input_error {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff0000;
+  background-image: url(red_textarea.png);
+  background-repeat: repeat-x;
+  font-size: 12px;
+  color: #000000;
+  height: 140px;
+  width: 550px;
+  margin-top:3px;
+  margin-bottom:8px;
+}
+ 
+.textarea_input_error:hover {
+  background-image: url(red_textarea.png);
+  background-repeat: repeat-x;
+}
+ 
+.textarea_input_error:focus {
+  border-color: #64acd8;
+  background-image: url(blue_textarea.png);
+  background-repeat: repeat-x;
+}
